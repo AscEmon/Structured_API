@@ -17,6 +17,7 @@ class _SignUpPageState extends State<LoginPage> {
   final LogInController logInController = Get.put(
       LogInController(repository: MyRepository(apiClient: ApiClient())));
 
+  int conflit = 0;
   @override
   Widget build(BuildContext context) {
     return SafeArea(

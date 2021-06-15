@@ -21,6 +21,7 @@ class _HomePageState extends State<HomePage> {
         body: Container(
           child: Column(
             children: [
+              Text("This is for git conflict"),
               Obx(() {
                 return _getController.isLoading.value == true
                     ? Center(
