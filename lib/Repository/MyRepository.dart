@@ -1,6 +1,7 @@
 import 'package:http/http.dart';
 import 'package:structured_api/ApiProvider/ApiClient.dart';
 import 'package:structured_api/Model/GetModelDemo.dart';
+import 'package:structured_api/Model/PostModelDemo.dart';
 import 'package:structured_api/Views/Utilis/AppUrl.dart';
 
 class MyRepository {
@@ -59,26 +60,23 @@ class MyRepository {
   //   return apiClient.signUpPost(name, email, password);
   // }
 
-  Future<bool?> loginRepo(String name, String email) async {
+  Future<PostModelDemo?> loginRepo(String name, String email) async {
     print(email);
     print(name);
-    Map<String, dynamic> body = {
-      "name": name,
-      "email": email,
-    };
-    var res = await ApiClient.Request(AppUrl.adminLoginUrl, Method.GET, null);
+    Map<String, dynamic> body = {"name": name, "job": email};
+    var res = await ApiClient.Request(AppUrl.adminLoginUrl, Method.POST, body);
     try {
       if (res.body != null) {
         String responseString = res.body;
         print(responseString);
-        return true;
+        return postModelDemoFromJson(responseString);
       }
     } catch (e) {
       print("loginRepo ::: ${e.toString()}");
     }
   }
 
-  Future getRepo() async {
+  Future<GetModelDemo?> getRepo() async {
     var res = await ApiClient.Request(AppUrl.loginUrl, Method.GET, null);
     try {
       if (res.body != null) {

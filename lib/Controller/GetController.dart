@@ -20,7 +20,7 @@ class GetController extends GetxController {
       isLoading(true);
       var getList = await repository.getRepo();
       if (getList != null) {
-        getModelList(getList);
+        getModelList.value = getList;
       }
     } finally {
       isLoading(false);

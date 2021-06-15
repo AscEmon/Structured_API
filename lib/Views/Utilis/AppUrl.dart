@@ -2,11 +2,12 @@ String baseUrl = "https://work.mshakhawat.com/api";
 
 class AppUrl {
   static String signUpUrl = "$baseUrl/auth/register";
-  static String loginUrl = "https://jsonplaceholder.typicode.com/users";
+  static String loginUrl =
+      "https://app.ringersoft.com/api/ringersoftfoodapp/test-category/2?fbclid=IwAR3OfylOShIlzWs7pQEt5kLSyBfQhLrjhlWcbA4P6GIr-GUj0WDQaDgjTd0";
   static String logoutUrl = "$baseUrl/auth/logout";
   static String userPackagesUrl = "$baseUrl/packages";
   static String userSubscriptionUrl = "$baseUrl/auth/charge";
-  static String adminLoginUrl = "https://jsonplaceholder.typicode.com/users";
+  static String adminLoginUrl = "https://reqres.in/api/users";
   static String adminLogOutUrl = "$baseUrl/admin/logout";
   static String adminPackagesUrl = "$baseUrl/admin/package";
   static String adminDashboardUrl = "$baseUrl/admin/dashboard";

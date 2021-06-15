@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'HomePage',
+      initialRoute: '/',
       title: 'Structured API',
       getPages: AppRoutes.AppRoutesList(),
       theme: ThemeData(
