@@ -62,7 +62,7 @@ class _SignUpPageState extends State<LoginPage> {
                 top: 60,
                 left: Get.width / 2 - 40,
                 child: Text(
-                  "Log In",
+                  "Log In change for conflict",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 32,
