@@ -17,6 +17,7 @@ class _SignUpPageState extends State<LoginPage> {
   final LogInController logInController = Get.put(
       LogInController(repository: MyRepository(apiClient: ApiClient())));
 
+  int conflit = 0;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -207,7 +208,7 @@ class _SignUpPageState extends State<LoginPage> {
                                       MaterialStateColor.resolveWith(
                                           (states) => Colors.white)),
                               child: Text(
-                                "Log In",
+                                "Log In Conflict",
                                 style: TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
