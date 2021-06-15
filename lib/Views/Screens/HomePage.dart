@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
                                   color:
                                       index % 2 == 1 ? Colors.red : Colors.blue,
                                   child: Text(
-                                      "${_getController.getModelList.value.data![index].name}"),
+                                      "${_getController.getModelList.value.data![index].id}"),
                                 ),
                               );
                             }),

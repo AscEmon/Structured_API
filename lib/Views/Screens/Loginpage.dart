@@ -208,7 +208,7 @@ class _SignUpPageState extends State<LoginPage> {
                                       MaterialStateColor.resolveWith(
                                           (states) => Colors.white)),
                               child: Text(
-                                "Log In",
+                                "Log In Conflict",
                                 style: TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
